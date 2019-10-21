@@ -1,0 +1,2393 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript">
+  </script><script async src="https://www.tui.ru/getmedia/6e64783b-d6d6-4b51-ab25-d8d1ec72e234/all" type="text/javascript">
+  </script>
+<link href="https://www.tui.ru/getmedia/d55fbf08-49b9-4516-8034-c14a0a99df6c/agent-all" rel="stylesheet" type="text/css" />
+<link href="https://www.tui.ru/getmedia/c51e2c41-667b-4ebd-8ad9-484a6efbd767/all" rel="stylesheet" type="text/css" />
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://www.tui.ru/getmedia/2d2c07ca-d644-47a6-a242-1b3b2af5f750/style-dif/" rel="stylesheet" type="text/css" />
+<link href="https://www.tui.ru/getmedia/bf6ea601-998f-4d12-a155-de9eb383a651/style/" rel="stylesheet" type="text/css" />
+<link href="https://www.tui.ru/getmedia/0414d9ba-58ad-4eb8-935f-82cd7ca4fa17/carusel-style/" rel="stylesheet" type="text/css" />
+<link href="https://www.tui.ru/getmedia/b21d19ea-f1e9-41a6-9828-6a503839b616/lightslider/" rel="stylesheet" />
+<link href="https://www.tui.ru/getmedia/4eedcb71-1619-4922-b8be-117e2b2bb7fd/internal-diff-style/" rel="stylesheet" />
+<link href="https://www.tui.ru/getmedia/eec19a87-cf5a-40c7-8442-09183e60e372/all" rel="stylesheet" type="text/css" />
+<link href="dist/css/font-tui/font-tui.css" rel="stylesheet" type="text/css" />
+<style type="text/css">.price-num > p > b::after {
+        content: " грн";
+     }
+</style>
+<meta content="width=device-width,initial-scale=1" name="viewport" /><script type="text/javascript">
+         jQuery(function(){
+             /* костыль№1 для раздела-подзаголовка "Вечером" блока 2 - начало */
+             jQuery('#s4b1').html(jQuery('#s3b3').html());
+             jQuery('#s4b1 .col-md-12:first-child').show();
+             jQuery('#s4b1 .col-md-12:first-child .tit').show();
+             jQuery('#s4b1 .col-md-12:first-child .tit').text('Вечером');
+             console.log('~~~new5b');
+             jQuery(document).on('click', '.hotels-club-country.container2 .buttons-navigations a:not(.hotels-club-country.container2 .buttons-navigations a:first-child)', function(){
+                 jQuery('.hotels-club-country.vecherom').hide();
+             });
+             jQuery(document).on('click', '.hotels-club-country.container2 .buttons-navigations a:first-child', function(){
+                 jQuery('.hotels-club-country.vecherom').show();
+             });         
+             
+             jQuery('.hotels-club-country.container2 select.buttons-navigations').on('change', function(){
+                 if(jQuery(".hotels-club-country.container2 select.buttons-navigations").prop('selectedIndex')>0){
+                     jQuery('.hotels-club-country.vecherom').hide();
+                 }
+                 else{
+                     jQuery('.hotels-club-country.vecherom').show();
+                 }
+             });
+             /* костыль№1 для раздела-подзаголовка "Вечером" блока 2 - конец */
+             jQuery(".smooth-scroll").click(function() {
+                 $('html,body').animate({
+                 scrollTop: $("h2:first-child").offset().top}, 'slow');
+             });
+         });
+  </script>
+<style type="text/css">body{
+              font-family:  "TUI-reg", sans-serif !important;
+            }
+
+           .desk .gey_p{
+               display: none;
+            }
+     .gey_p{
+       padding-left:15px;
+     }
+           .top-slider {
+                        position: relative;
+                        background: white;
+                        padding: 0;
+                    }
+
+                    .sliders-hotels {
+                        min-height: 10px !important;
+                        margin-top: 1em;
+                    }
+                    .sliders-hotels h4{
+                       padding-left: 15px;
+                    }
+
+                    .slider-content {
+                        min-height: auto !important;
+                        margin: 2% 2% 0;
+                        height:52px;
+                    }
+                    .slider_2 .slider-content{
+                       height:auto;
+                    }
+
+            /*         .sl .slider-content {
+                        min-height: 336px !important;
+                    }*/
+
+                    .lSPager {
+                        display: none;
+                    }
+
+
+                        .lSSlideOuter img {
+                            width: auto;
+                            height: 380px;
+                        }
+
+                    .lSAction > .lSPrev {
+                        left: 15%;
+                    }
+
+                    .lSAction > .lSNext {
+                        right: 15%;
+                    }
+
+                    .lSAction > .lSNext, .lSAction > .lSPrev {
+                        color: #5887a8;
+                        font-size: 30px;
+                        margin: 5px;
+                        padding: 12px;
+                        background: #fff;
+                        display: inline-block;
+                        cursor: pointer;
+                        -webkit-border-radius: 50%;
+                        border-radius: 50%;
+                        height: 56px;
+                        width: 56px;
+                        -webkit-box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
+                        box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
+                    }
+
+                    .lSAction > .lSNext, .lSAction > .lSPrev {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                        .lSAction > .lSNext:before {
+                            content: " >";
+                            font-weight: 100;
+                            font-size: 1.3em;
+                        }
+
+                        .lSAction > .lSPrev:before {
+                            content: "< ";
+                            font-weight: 100;
+                            font-size: 1.3em;
+                        }
+                        .tamplate, #mobile{
+                         display: none;
+                         margin: 0 auto;
+                        }
+                        .tamplate .block-circle{
+                         display: none;
+                        }
+                        @media screen and (max-width: 759px){
+                         .tamplate, #mobile{
+                           display: block;
+                         }
+                         .sliders-hotels{
+                           margin-top: 0;
+                         }
+                         .info-footer{
+                          padding:0;
+                         }
+                         .row-f{
+                          padding: 15px;
+                         }
+                         .footer-informations .col-12 > h3{
+                          text-align: left;
+                         }
+                         .soc{
+                          padding: 0;
+                         }
+                         .soc .icons-footer {
+                          justify-content: flex-start;
+                         }
+                         .tit{
+                           margin: 1.5em 0 0.5em;
+                          }
+                        }
+     .price-num{
+                            display: block;
+                           }
+     #s1b3 .tit{
+                            display: none;
+                           }
+                           
+     /* fixes */
+     .price-num{
+         display: none;
+     }
+     h4 {
+         font-size: 0.9rem !important;
+     }
+     h2.margin-need{
+         margin-top:-30px !important
+     }
+     .vecherom .buttons-navigations{
+         display:none !important;
+     }
+     .button-slider{
+        height:52px !important;
+     }
+     .button-slider p{
+        margin-bottom:0.5rem;
+     }
+    .button-slider-active {
+        background-color: #C3E8FB!important;
+        box-shadow: inset 0 -4px 0 0 #C3E8FB!important;
+    }
+     img.main-logo {
+        width: auto;
+        display: inline-block;
+        margin: 60px 20px 60px 0;
+     }
+     h1.main {
+        position: relative;
+        top: 35px;
+        display: inline-block;
+        margin: 80px 10px 20px 15px !important;
+        text-transform: uppercase;
+        font-size: 1.5em!important;
+        font-weight: bold!important;    
+     }
+     #s4b1 .tit{
+         margin-top:5%;
+     }
+     @media screen and (max-width: 1200px){
+        h1.main {
+            margin: -35px 10px 20px 0px !important;
+            top: 0;
+        }
+     }
+     @media screen and (max-width: 767px){
+         h2.margin-need{
+             margin-top:0 !important;
+         }
+     }
+     @media screen and (max-width: 759px){   
+         #s4b1 .tit{
+             margin: 1.5em 0 0.5em;
+         }
+     }
+     #s1b1 .tit, #s1b2 .tit, #s1b3 .tit, #s1b4 .tit, #s1b5 .tit{
+        display:none;
+     }
+     .icons-footer{
+        margin-bottom: 1em;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+     }
+     h2{
+         text-transform: uppercase;
+         font-size: 1.3em!important;
+     }
+     .top-dn{
+         background:none !important;
+     }
+     .slider div{
+         cursor: default !important;
+     }
+     .slider a{
+         cursor: pointer !important;
+     }  
+     .block_3{margin-bottom:0!important}
+     .desk{
+       justify-content: flex-start;
+     }
+</style>
+<title></title>
+<div class="row-all">
+<div class="menu-top">
+<div class="container">
+<div class="row"><a class="col-md-2 col-6 logo-img" href="/"><img src="//agent.tui.ru/Images/logo.png" /></a>
+<div class="col-5 but-menu-mobile">&nbsp;</div>
+
+<div class="col-md-10 col-10 mobile_agent">
+<div id="exit_menu">X</div>
+
+<div class="row menu-label"><a class="label-menu" href="/Franchaizing" target="_blank">Франчайзинг</a> <a class="label-menu" href="/partnership" target="_blank">Сотрудничество</a> <a class="label-menu" href="https://ssam.samo.travel/ssam/?uid=191745" target="_blank">Outsource</a> <a class="label-menu" href="/Branded-Shop" style="visibility: hidden;" target="_blank">TUI Shop</a>
+
+<div class="label-menu" style="position: relative;cursor: pointer"><a href="/concepts/home/" style="color:#092a5e">Концепции отдыха TUI</a>
+
+<div class="label-menu-2">
+<div class="concept-link"><a href="/concepts/tui-fun-sun"><img alt="FN_logo" src="https://www.tui.ru/getmedia/a43e4cf0-4244-45b4-8bd4-275b7d8ba1a9/logoTopFN" /></a>
+
+<div><a href="/concepts/tui-fun-sun"><b>TUI FUN&amp;SUN</b><br />
+Семейный отдых</a></div>
+</div>
+
+<div class="concept-link"><a href="/concepts/tui-day-night"><img alt="FN_logo" src="https://www.tui.ru/getmedia/dfa8f32e-6221-4be8-9c2e-23d063b6b989/DN-logo_vertical_web" /></a>
+
+<div><a href="/concepts/tui-day-night"><b>TUI DAY&amp;NIGHT</b><br />
+Молодежный отдых</a></div>
+</div>
+
+<div class="concept-link"><a href="http://agent.tui.ua/concepts/tui_toucan"><img alt="FN_logo" src="https://www.tui.ru/getmedia/eda1b56f-2532-46eb-8626-65425d799edf/TC-logo-mini-vertical" /></a>
+
+<div><a href="/concepts/tui-toucan"><b>TUI MINI TOUCAN</b><br />
+Отдых с детьми</a></div>
+</div>
+</div>
+</div>
+<!-- <a class="label-menu" href="/premium/premium" target="_blank">TUI PREMIUM</a> <a class="label-menu log enter" data-bind="click: LoginClick" href="http://b2b.tui.ru/default.php?page=cl_refer&amp;" target="_blank">Личный кабинет</a> --></div>
+</div>
+
+<div class="col-md-10">
+<div class="row menu-telephone">
+<div class="col-md-6 col-6">
+<p class="telephone-title">Агентствам:</p>
+
+<p class="telephone-number">044 401 08 08</p>
+</div>
+<a href="http://www.tui.ua" style="color: black">Сайт для туристов</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row-all">
+<ul id="autoWidth">
+	<li>
+	<div class="myslide"><img src="https://www.tui.ru/getmedia/cf95e3b3-acbf-4d36-b9ab-27a2e8ddc649/top-slider-1" /></div>
+	</li>
+	<li>
+	<div class="myslide"><img src="https://www.tui.ru/getmedia/64715bc9-3b60-489f-b2de-cb30e75bfa9f/top-slider-2" /></div>
+	</li>
+	<li>
+	<div class="myslide"><img src="https://www.tui.ru/getmedia/2a24c68a-3e1a-456a-9dd7-776c03a95fa8/top-slider-3" /></div>
+	</li>
+	<li>
+	<div class="myslide"><img src="https://www.tui.ru/getmedia/02a4dd9b-9d82-43ed-ad84-6bd90cfb883f/top-slider-4" /></div>
+	</li>
+	<li>
+	<div class="myslide"><img src="https://www.tui.ru/getmedia/e6ce4b9f-1d2e-45d0-9136-55fbd0cd795b/top-slider-5" /></div>
+	</li>
+	<li>
+	<div class="myslide"><img src="https://www.tui.ru/getmedia/d9ad3fdf-ba24-4c26-9e55-08752818d3df/top-slider-6" /></div>
+	</li>
+</ul>
+
+<div class="container">
+<div class="row">
+<div class="buttons-slider button-slider-mobile col-md-12">
+<div class="col-md-2 col-12 button-slider " id="tb" onclick="window.open('/concepts/tui-fun-sun/')">
+<p>Это FUN&amp;SUN</p>
+</div>
+
+<div class="button-slider col-md-1 col-12" onclick="smoothScrolling('#hotels')">
+<p>Отели</p>
+</div>
+
+<div class="button-slider col-md-3 col-12 button-slider-active" onclick="smoothScrolling('#rs')">
+<p>Развлечения и спорт</p>
+</div>
+
+<div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/for-children-fs/')">
+<p>Для детей</p>
+</div>
+
+<div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/concerts-and-master-classes')">
+<p>Афиша 2019</p>
+</div>
+
+<div class="button-slider col-md-3 col-12" onclick="window.open('http://b2b.tui.ru/default.php?page=search_tour&amp;')">
+<p>Перейти к бронированию</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container text-content" id="rs"><img class="main-logo" src="https://www.tui.ru/getmedia/599fc8fa-8b25-484b-b09f-dc541a1360ab/logo" />
+<h1 class="main">Семейный отдых TUI FUN&amp;SUN</h1>
+</div>
+
+<div class="container">
+<h2 class="margin-need">Расписание развлечений в клубе Тукан</h2>
+</div>
+<!-- контейнер 1 -->
+
+<div class="container hotels-club-country" id="earlyBook"><!-- <div class="row"> -->
+<div class="buttons-navigations"><a class="button-navigatin active-link" data-block=".slider_1" href="#s1b1">Все</a> <a class="button-navigatin" data-block=".slider_1" href="#s1b2">Академии Тукан</a> <a class="button-navigatin" data-block=".slider_1" href="#s1b3">Творческие и игровые активности</a> <a class="button-navigatin" data-block=".slider_1" href="#s1b4">Спортивные активности</a> <a class="button-navigatin" data-block=".slider_1" href="#s1b5">Вечерние шоу</a></div>
+<!-- </div> --><!-- ТАБ 1 -->
+
+<div style="background:#e1f4fb;padding: 10px 0;">
+<div style="font-size:16px;text-align:center;">Скачайте программу анимации в отелях TUI FUN&amp;SUN</div>
+<!-- ************************************************************************** -->
+
+<div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"><span style="opacity:0">.</span></span> <a href="https://www.tui.ru/getmedia/f07b8f72-0a3f-4d82-963c-0274a81cdcbd/FS-RUS-program" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">программа анимации в отелях TUI FUN&amp;SUN в Турции</a></div>
+
+<div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"><span style="opacity:0">.</span></span><a href="https://www.tui.ru/getmedia/cefabb62-875f-44a0-8bd6-18e439051c7a/FUNSUN-Cyprus-RUS_1" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">программа анимации в отелях TUI FUN&amp;SUN на Кипре</a></div>
+<!-- ************************************************************************** -->
+
+<div style="font-size:16px;text-align:center;margin-top:7px;">Скачайте программу детского клуба Тукан в отелях TUI FUN&amp;SUN</div>
+
+<div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"><span style="opacity:0">.</span></span><a href="https://www.tui.ru/getmedia/266dd7d9-e5e2-41ad-936c-9bedca320e9f/FS-toucan-ru-19" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">программа клубов Тукан в Турции</a></div>
+
+<div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"><span style="opacity:0">.</span></span><a href="https://www.tui.ru/getmedia/c4d1dbc5-8edf-4644-852f-f970752ea0ce/Cyprus-toucan-ru-2019" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">программа клубов Тукан на Кипре</a></div>
+</div>
+
+<div class="desk row slider slider_1" id="s1b1">
+<div class="col-md-12" style="display:none;">
+<h3 class="tit" style="display:none;">До обеда</h3>
+</div>
+
+<div id="mobile">&nbsp;</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/79ecef71-913b-4399-8911-ed61b4d79dd2/tab1-1);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Академия плавания</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/9d6ab996-65d5-43e4-b972-17d16291c4a3/tab1-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Танцевальная академия</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/9a277d44-dd0f-4c53-a180-046333c4257c/tab1-3);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Футбольная Академия</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/aee56176-ff4b-4eb4-93ce-e409fe6ad040/tab2-1);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Сбор путешественников. Письмо от Тукана</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/e1556a4e-0b91-40c4-ac34-2e0a25257ed1/tab2-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Тематические квесты и соревнования</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/f1478906-fcee-4f97-bd12-6120190df66a/tab2-3);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Творческая мастерская Тукана</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/19b71da6-c781-4712-b09d-f85445c67861/tab2-4);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Научные эксперименты</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/6cf0d64a-ede1-419f-a680-fae4096e1ce6/tab2-5);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Сюжетно-ролевые игры</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/bf108f5e-ae09-492c-a34b-c5d5b12af52a/tab2-6);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Аквагрим</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/38608293-6b1c-459e-b7d6-71bcf146f480/tab2-7);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Тукан коктейль</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/ee791898-d7de-4e9e-b758-0675fefd58e9/tab3-1);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Пляжный волейбол</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/b2b1f234-eaa8-49bf-bb14-dcf75037dea6/tab3-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Аква аэробика</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/6937b753-7e09-4b13-9ccc-8db2543d39c1/tab3-3);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Детская йога, танцевальная аэробика, гимнастика</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/e6973f11-f60c-40e9-b8f8-cfb91da7f204/tab3-4);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Игры в бассейне</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/7f9ef707-3095-4144-8be6-59d4d03ddf05/tab3-5);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Мини гольф</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/803107f8-90a2-4432-ad23-b32b2f5f48b1/tab3-6);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Стрельба из лука</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/642cab39-6ec5-4494-8cc0-b260f095f007/tab3-7);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Подвижные игры и эстафеты</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/38b17bf7-4d9a-494d-9124-e9f104a466b6/tab3-8);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Дартс</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/bce94a6d-7fdb-4539-abc0-b52e2e3f532e/tab4-1);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Мини диско</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/bc8dc507-5c9f-49c5-be00-e4e964c238cc/tab4-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>&laquo;Tукан Тусейшн&raquo;</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/4cc9b050-d671-42ce-80fb-2f79c6b3dc8b/tab4-3);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Тематические фестивали для всей семьи</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/2ce25f71-3f23-486d-8738-afbd40678111/tab4-4);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Кинопоказы на открытом воздухе</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/eab60a0a-36d9-4950-a620-c1c5b4b9de24/tab4-5);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Кидс караоке</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/d01a755a-dab4-4cb2-8da5-27d8ddeebe41/tab4-6);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Детское Сумо</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-12" style="display:none;margin-top:5%">
+<div>
+<h3 class="tit" style="display:none;">После обеда блок 1</h3>
+</div>
+</div>
+</div>
+
+<div class="row desk slider slider_1" id="s1b2" style="display: none"><!-- Таб 2-->
+<div class="col-md-12" style="display:none">
+<h3 class="tit" style="display:none;">До обеда</h3>
+</div>
+
+<div id="mobile">&nbsp;</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/79ecef71-913b-4399-8911-ed61b4d79dd2/tab1-1);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Академия плавания</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/9d6ab996-65d5-43e4-b972-17d16291c4a3/tab1-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Танцевальная академия</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/9a277d44-dd0f-4c53-a180-046333c4257c/tab1-3);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Футбольная Академия</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-12" style="display:none;margin-top:5%">
+<div>
+<h3 class="tit" style="display:none;">После обеда</h3>
+</div>
+</div>
+</div>
+
+<div class="row desk slider slider_1" id="s1b3" style="display: none"><!-- Таб 3-->
+<div class="col-md-12" style="display:none;">
+<h3 class="tit" style="display:none;">До обеда</h3>
+</div>
+
+<div id="mobile">&nbsp;</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/aee56176-ff4b-4eb4-93ce-e409fe6ad040/tab2-1);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Сбор путешественников. Письмо от Тукана</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/e1556a4e-0b91-40c4-ac34-2e0a25257ed1/tab2-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Тематические квесты и соревнования</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/f1478906-fcee-4f97-bd12-6120190df66a/tab2-3);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Творческая мастерская Тукана</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/19b71da6-c781-4712-b09d-f85445c67861/tab2-4);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Научные эксперименты</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/6cf0d64a-ede1-419f-a680-fae4096e1ce6/tab2-5);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Сюжетно-ролевые игры</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/bf108f5e-ae09-492c-a34b-c5d5b12af52a/tab2-6);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Аквагрим</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/38608293-6b1c-459e-b7d6-71bcf146f480/tab2-7);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Тукан коктейль</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-12" style="display:none;margin-top:5%">
+<div>
+<h3 class="tit" style="display:none;">После обеда</h3>
+</div>
+</div>
+</div>
+
+<div class="row desk slider slider_1" id="s1b4" style="display: none"><!-- Таб 4-->
+<div class="col-md-12" style="display:none;">
+<h3 class="tit" style="display:none;">До обеда</h3>
+</div>
+
+<div id="mobile">&nbsp;</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/ee791898-d7de-4e9e-b758-0675fefd58e9/tab3-1);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Пляжный волейбол</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/b2b1f234-eaa8-49bf-bb14-dcf75037dea6/tab3-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Аква аэробика</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/6937b753-7e09-4b13-9ccc-8db2543d39c1/tab3-3);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Детская йога, танцевальная аэробика, гимнастика</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/e6973f11-f60c-40e9-b8f8-cfb91da7f204/tab3-4);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Игры в бассейне</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/7f9ef707-3095-4144-8be6-59d4d03ddf05/tab3-5);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Мини гольф</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/803107f8-90a2-4432-ad23-b32b2f5f48b1/tab3-6);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Стрельба из лука</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/642cab39-6ec5-4494-8cc0-b260f095f007/tab3-7);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Подвижные игры и эстафеты</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/38b17bf7-4d9a-494d-9124-e9f104a466b6/tab3-8);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Дартс</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-12" style="display:none;margin-top:5%">
+<div>
+<h3 class="tit" style="display:none;">После обеда</h3>
+</div>
+</div>
+</div>
+
+<div class="row desk slider slider_1" id="s1b5" style="display: none"><!-- Таб 5--><!-- Таб 3-->
+<div class="col-md-12" style="display:none;">
+<h3 class="tit" style="display:none;">До обеда</h3>
+</div>
+
+<div id="mobile">&nbsp;</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/bce94a6d-7fdb-4539-abc0-b52e2e3f532e/tab4-1);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Мини диско</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/bc8dc507-5c9f-49c5-be00-e4e964c238cc/tab4-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>&laquo;Tукан Тусейшн&raquo;</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/4cc9b050-d671-42ce-80fb-2f79c6b3dc8b/tab4-3);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Тематические фестивали для всей семьи</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/2ce25f71-3f23-486d-8738-afbd40678111/tab4-4);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Кинопоказы на открытом воздухе</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/eab60a0a-36d9-4950-a620-c1c5b4b9de24/tab4-5);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Кидс караоке</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/d01a755a-dab4-4cb2-8da5-27d8ddeebe41/tab4-6);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Детское Сумо</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-12" style="display:none;margin-top:5%">
+<div>
+<h3 class="tit" style="display:none;">После обеда</h3>
+</div>
+</div>
+</div>
+</div>
+<!-- контейнер 2 -->
+
+<div class="container">
+<h2 style="margin-top:70px !important">Расписание спортивных занятий и развлечений</h2>
+</div>
+
+<div class="container hotels-club-country container2" id="earlyBook"><!-- <div class="row"> -->
+<div class="buttons-navigations"><a class="button-navigatin active-link" data-block=".slider_3" href="#s3b1">Все</a> <a class="button-navigatin" data-block=".slider_3" href="#s3b2">Для всей семьи</a> <a class="button-navigatin" data-block=".slider_3" href="#s3b3">Вечерние шоу</a></div>
+<!-- </div> --><!-- ТАБ 1 -->
+
+<div class="desk row slider slider_3" id="s3b1">
+<div class="col-md-12" style="">
+<h3 class="tit">До обеда</h3>
+</div>
+
+<div id="mobile">&nbsp;</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/4d2805d4-c685-4ebe-8152-4266be2186f0/block2-tab1-1);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Йога</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/b931a3c8-e194-4643-a279-a337c8d698ac/block2-tab1-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Пилатес</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/5477f17e-3fbf-454c-b8f4-c0c3d644ccd8/block2-tab1-3);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Airgun</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/1ef216bd-cb15-486d-94e3-cc094ff3811c/block2-tab1-4);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Бочче</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/e1b0f5a2-1517-41e0-9570-ec90959cb2b7/block2-tab1-5);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Пляжный волейбол</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/04fae21e-035d-4b0c-8772-84ed4f66ffe2/block2-tab1-6);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Стрельба из лука</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/5f42f60a-41cd-4ede-be81-4f7e179c9a63/block2-tab1-7);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Дартс</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/53dd3a9f-af3d-42ae-a605-96dbf536d776/block2-tab1-8);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Аквааэробика в бассейне</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/b79aff66-5bd7-41bd-bf97-0ac114a0faab/block2-tab1-9);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Игры в бассейне</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/55319d6e-9a86-442b-9316-e6c9743d3947/block2-tab1-10);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Водное поло</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/60848e48-bf99-49a4-88f2-b6ec972512f3/block2-tab1-11);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Make Body (упражнения на жиросжигание)</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/476bb12b-404a-4663-93e0-2c36c30e8695/block2-tab1-12);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Power aerobic</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-12" style="margin-top:5%">
+<div>
+<h3 class="tit">После обеда</h3>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/b2fc9a48-45aa-41c4-967e-7c5ef3eaf959/block2-tab1-13);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Belly dance</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/961a00b4-ca73-480e-8cbb-58732e0caad7/block2-tab1-14);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Latina&amp; Salca Dance</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/cb577d1e-4642-425a-9624-6d8a1b66ed84/block2-tab1-15);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Дартс</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/9ff949a7-d259-484f-ae97-8865c41020ec/block2-tab1-16);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Бочче</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/ee569220-c25f-47b8-b6d8-0754621004df/block2-tab1-17);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Airgun</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/274fae3c-fd6b-4bfc-a17f-04c5e021a036/block2-tab1-18);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Урок национального языка</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/ce0aaa5c-ad6f-4b04-a5a3-d797ac30b1fa/block2-tab1-19);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Кулинарный мастер-класс</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/05c41adf-1a83-4992-a35f-3151fad85515/block2-tab1-20);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Мастер-класс по мобильной фотографии</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/edfb0c18-ba3f-4179-aa7f-0ec7c00c43e8/block2-tab1-21);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Мастер-класс по приготовлению коктейлей</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/2b25a264-0daa-4942-ad4b-5d9b3f0e8f23/block2-tab1-24);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Ежедневные турниры</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/fa9ae5e5-e1c2-4d20-9afa-3928be9f4a5e/block2-tab1-25);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Zumba</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/873acc69-de12-4bbe-ba8f-cf8faf034eb6/block2-tab1-26);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Power Zumba</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/6de4977c-78a4-464f-960e-9fa21556d149/block2-tab1-27);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Пляжный волейбол</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/31636b08-305e-4cec-8ef5-33c954fe312c/block2-tab1-28);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Basic Step</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/3217a3a6-6d1a-49ff-8f70-4ae45777f01b/block2-tab1-29);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Power Step</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/f9d3c662-e0f8-418b-b0d5-a9a22e5284e4/block2-tab1-30);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Баскетбол</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/4c2d35dd-c6cd-4489-b972-192fe61cab33/block2-tab1-31);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Футбол</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/cf7601ad-a111-4db0-97de-dcd4f76d52c2/block2-tab1-32);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Стрельба из лука</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row desk slider slider_3" id="s3b2" style="display: none"><!-- Таб 2-->
+<div class="col-md-12" style="">
+<h3 class="tit">До обеда</h3>
+</div>
+
+<div id="mobile">&nbsp;</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/4d2805d4-c685-4ebe-8152-4266be2186f0/block2-tab1-1);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Йога</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/b931a3c8-e194-4643-a279-a337c8d698ac/block2-tab1-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Пилатес</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/5477f17e-3fbf-454c-b8f4-c0c3d644ccd8/block2-tab1-3);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Airgun</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/1ef216bd-cb15-486d-94e3-cc094ff3811c/block2-tab1-4);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Бочче</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/e1b0f5a2-1517-41e0-9570-ec90959cb2b7/block2-tab1-5);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Пляжный волейбол</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/04fae21e-035d-4b0c-8772-84ed4f66ffe2/block2-tab1-6);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Стрельба из лука</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/5f42f60a-41cd-4ede-be81-4f7e179c9a63/block2-tab1-7);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Дартс</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/53dd3a9f-af3d-42ae-a605-96dbf536d776/block2-tab1-8);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Аквааэробика в бассейне</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/b79aff66-5bd7-41bd-bf97-0ac114a0faab/block2-tab1-9);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Игры в бассейне</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/55319d6e-9a86-442b-9316-e6c9743d3947/block2-tab1-10);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Водное поло</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/60848e48-bf99-49a4-88f2-b6ec972512f3/block2-tab1-11);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Make Body (упражнения на жиросжигание)</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/476bb12b-404a-4663-93e0-2c36c30e8695/block2-tab1-12);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Power aerobic</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-12" style="margin-top:5%">
+<div>
+<h3 class="tit">После обеда</h3>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/b2fc9a48-45aa-41c4-967e-7c5ef3eaf959/block2-tab1-13);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Belly dance</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/961a00b4-ca73-480e-8cbb-58732e0caad7/block2-tab1-14);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Latina&amp; Salca Dance</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/cb577d1e-4642-425a-9624-6d8a1b66ed84/block2-tab1-15);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Дартс</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/9ff949a7-d259-484f-ae97-8865c41020ec/block2-tab1-16);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Бочче</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/ee569220-c25f-47b8-b6d8-0754621004df/block2-tab1-17);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Airgun</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/274fae3c-fd6b-4bfc-a17f-04c5e021a036/block2-tab1-18);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Урок национального языка</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/ce0aaa5c-ad6f-4b04-a5a3-d797ac30b1fa/block2-tab1-19);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Кулинарный мастер-класс</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/05c41adf-1a83-4992-a35f-3151fad85515/block2-tab1-20);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Мастер-класс по мобильной фотографии</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/edfb0c18-ba3f-4179-aa7f-0ec7c00c43e8/block2-tab1-21);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Мастер-класс по приготовлению коктейлей</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/2b25a264-0daa-4942-ad4b-5d9b3f0e8f23/block2-tab1-24);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Ежедневные турниры</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/fa9ae5e5-e1c2-4d20-9afa-3928be9f4a5e/block2-tab1-25);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Zumba</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/873acc69-de12-4bbe-ba8f-cf8faf034eb6/block2-tab1-26);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Power Zumba</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/6de4977c-78a4-464f-960e-9fa21556d149/block2-tab1-27);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Пляжный волейбол</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/31636b08-305e-4cec-8ef5-33c954fe312c/block2-tab1-28);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Basic Step</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/3217a3a6-6d1a-49ff-8f70-4ae45777f01b/block2-tab1-29);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Power Step</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/f9d3c662-e0f8-418b-b0d5-a9a22e5284e4/block2-tab1-30);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Баскетбол</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/4c2d35dd-c6cd-4489-b972-192fe61cab33/block2-tab1-31);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Футбол</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-2 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/cf7601ad-a111-4db0-97de-dcd4f76d52c2/block2-tab1-32);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Стрельба из лука</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row desk slider slider_3" id="s3b3" style="display: none"><!-- Таб 3-->
+<div class="col-md-12" style="display:none;">
+<h3 class="tit" style="display:none;">До обеда</h3>
+</div>
+
+<div id="mobile">&nbsp;</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/9ee285ad-ed30-4807-a1ee-32db96a4fbe2/block2-tab2-1);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Beach party</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/862c7c4f-3815-452a-965a-4390b554c3b5/block2-tab2-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Профессиональные шоу</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/c82f2219-4350-4aa9-911a-a3f039419d29/block2-tab2-3);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Дискотека</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/be0afaa0-e7c8-49a7-aae4-84a18e504264/block2-tab2-4?2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Выступления популярных артистов</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/98042b33-5817-4670-8ae9-17cc3e5c9afa/block2-tab2-5);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Живая музыка</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/6aaf0cd2-c626-4e41-84a8-6d72ee178910/block2-tab2-6);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Тематическая вечеринка</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/7182589e-dfb1-4896-8d32-2fa6a64f1cfe/block2-tab2-7);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Караоке</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/ea667d41-0290-4207-b8b5-c399dbd8a057/block2-tab2-8);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Белая вечеринка</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="sm-1 col-md-3 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/e7ca55d4-dc5f-4308-bc42-8796881350b7/block2-tab2-9);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content">
+<h4>Национальное шоу</h4>
+
+<p class="gey_p">&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-12" style="display:none;margin-top:5%">
+<div>
+<h3 class="tit" style="display:none;">После обеда</h3>
+</div>
+</div>
+</div>
+</div>
+<!-- костыль№1 - третий подзаголовок Вечером -->
+
+<div class="container hotels-club-country vecherom" id="earlyBook"><!-- <div class="row"> -->
+<div class="buttons-navigations"><!--<a class="button-navigatin active-link" data-block=".slider_4" href="#s4b1">Все</a>--></div>
+<!-- </div> --><!-- ТАБ 1 -->
+
+<div class="row desk slider slider_4" id="s4b1" style=""><!-- сюда через костыль№1-скрипт вставляется копия слайда "Вечерние шоу", чтобы у блока 2 был визуально 3-й подзаголовок "Вечером" в табе "Все". Этот блок прячется при выборе других табов блока 2 --></div>
+</div>
+
+<!-- ОТЕЛИ СТАРТ  ========================================================================================= -->
+
+
+<div class="container-fluid block_3" id="hotels">
+<div class="container">
+<h2 style="text-transform: uppercase;">Отели с концепцией TUI FUN&amp;SUN</h2>
+</div>
+
+<!-- ОТЕЛИ СТАРТ слайдер ========================================================================================= -->
+
+<div class="row">
+<div class="container sl" id="hotels">
+<div class="buttons-navigations"><a class="button-navigatin active-link" data-block=".slider_2" href="#s2b1">Турция</a> <!-- Отели с концепцией Турция --> <a class="button-navigatin" data-block=".slider_2" href="#s2b2">Кипр</a> <!-- Отели с концепцией Кипр --></div>
+<!-- Отели с концепцией Турция -->
+
+<div class="slider slider_2" id="s2b1">
+<div class="row-slider" data-col="3">
+
+<!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+<a href="http://agent.tui.ru/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach" target="_blank">
+<div class="col-md-4 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/e112b2c4-35a6-43bb-b43f-e788025b543e/new_hotel_04_04);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content slide-height_tallone">
+<h4>Турция, Алания (Авсаллар)</h4>
+
+<p class="gey_p">TUI FUN&amp;SUN Miarosa Incekum Beach 5*</p>
+
+<ul>
+	<li>Компактная территория</li>
+	<li>Есть relax-зона с бассейном и баром</li>
+	<li>Крутые водные горки</li>
+	<li>Новые номера</li>
+	<li>Песчаный пляж</li>
+	<li>Необычная территория Детского Клуба Тукан с бассейном</li>
+</ul>
+</div>
+
+<div class="row price">
+<!--<div class="col-md-7 price-num">
+<p>от <b>25 338</b> на одного</p>
+
+<p>на 7 ночей</p>
+</div>-->
+
+<div class="col-md-5">
+<p class="tour_a"><a href="http://agent.tui.ru/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach">Выбрать тур</a></p>
+</div>
+</div>
+</div>
+</div></a>
+<!-- ОДИН ОТЕЛЬ END ===================================-->
+
+<!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+<a href="/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica" target="_blank">
+<div class="col-md-4 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/7299bc8c-2f8b-4dc0-aa2a-dd56a6b2830a/global);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content slide-height_tallone">
+<h4>Турция, Кемер (Финике)</h4>
+
+<p class="gey_p">TUI FUN&amp;SUN Club Di Finica 5*</p>
+
+<ul>
+	<li>Уникальное месторасположение</li>
+	<li>Отель окружен апельсиновыми рощами</li>
+	<li>Просторный пляж с плавным входом</li>
+	<li>Большая зеленая территория</li>
+	<li>Водные горки</li>
+</ul>
+</div>
+
+<div class="row price">
+<!--<div class="col-md-7 price-num">
+<p>от <b>30 878</b> на одного</p>
+
+<p>на 7 ночей</p>
+</div>-->
+
+<div class="col-md-5">
+<p class="tour_a"><a href="/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica">Выбрать тур</a></p>
+</div>
+</div>
+</div>
+</div>
+</a>
+<!-- ОДИН ОТЕЛЬ END ===================================-->
+
+<!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+<a href="/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort" target="_blank">
+<div class="col-md-4 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/1775cfc9-5312-4a34-86a2-6093a73b5bf8/global_photo_comfort);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content slide-height_tallone">
+<h4>Турция, Кемер (Гейнюк)</h4>
+
+<p class="gey_p">TUI FUN&amp;SUN Comfort Beach Resort 5*</p>
+
+<ul>
+	<li>Большая зеленая территория</li>
+	<li>Просторные номера</li>
+	<li>Аквапарк с 4 водными горками</li>
+	<li>Мини-зоопарк</li>
+	<li>4 бассейна</li>
+	<li>Пляж с плавным пологим входом в море</li>
+</ul>
+</div>
+
+<div class="row price">
+<!--<div class="col-md-7 price-num">
+<p>от <b>33 505</b> на одного</p>
+
+<p>на 7 ночей</p>
+</div>-->
+
+<div class="col-md-5">
+<p class="tour_a"><a href="/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort">Выбрать тур</a></p>
+</div>
+</div>
+</div>
+</div>
+</a>
+<!-- ОДИН ОТЕЛЬ END ===================================-->
+
+<!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+<a href="/Tours/Europe/Turkey/belek/Belek/TUI-FUN-SUN-River-Resort-Belek" target="_blank">
+<div class="col-md-4 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/ac816ac1-3c20-4a5f-a712-862c2ec73b37/photo-8-2);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content slide-height_tallone">
+<h4>Турция, Белек</h4>
+
+<p class="gey_p">TUI FUN&amp;SUN River Resort Belek 5*</p>
+
+<ul>
+	<li>Расположен на берегу реки</li>
+	<li>Необычная территория с двухэтажными бунгало в греческом стиле</li>
+	<li>Бюджетный Белек &ndash; низкая цена для данного региона</li>
+	<li>Трансфер до собственного пляжа осуществляется по реке с живописным видом (время пути 8-12 минут)</li>
+	<li>Есть номера Family с размещением 5 человек и виллы с размещением 9 человек</li>
+	<li>Есть номера SWIM UP</li>
+</ul>
+</div>
+
+<div class="row price">
+<!--<div class="col-md-7 price-num">
+<p>от <b>30 378</b> на одного</p>
+
+<p>на 7 ночей</p>
+</div>-->
+
+<div class="col-md-5">
+<p class="tour_a"><a href="/Tours/Europe/Turkey/belek/Belek/TUI-FUN-SUN-River-Resort-Belek">Выбрать тур</a></p>
+</div>
+</div>
+</div>
+</div>
+</a>
+<!-- ОДИН ОТЕЛЬ END ===================================-->
+
+<!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+<a href="/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire/" target="_blank">
+<div class="col-md-4 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/517b01e9-57fe-4adb-a50f-a010ef13d1e5/photo-9);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content slide-height_tallone">
+<h4>Турция, Кемер (Текирова)</h4>
+
+<p class="gey_p">TUI FUN&amp;SUN Club Saphire 5*</p>
+
+<ul>
+	<li>Выгодная стоимость</li>
+	<li>Зеленая территория с сосновыми деревьями</li>
+	<li>Оборудование Zippline на детской площадке</li>
+	<li>Новая зона Chill out 18+ (только для взрослых, с круглосуточным баром и закусками)</li>
+	<li>Отдельная Relax зона с бассейном и баром</li>
+	<li>Первый отель по концепции TUI FUN&amp;SUN</li>
+</ul>
+</div>
+
+<div class="row price">
+<!--<div class="col-md-7 price-num">
+<p>от <b>32 501</b> на одного</p>
+
+<p>на 7 ночей</p>
+</div>-->
+
+<div class="col-md-5">
+<p class="tour_a"><a href="/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire/">Выбрать тур</a></p>
+</div>
+</div>
+</div>
+</div>
+</a>
+<!-- ОДИН ОТЕЛЬ END ===================================-->
+
+<!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+<a href="/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S" target="_blank">
+<div class="col-md-4 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/d23f7504-8e8e-4757-b2ae-421600d11b95/photo-10);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content slide-height_tallone">
+<h4>Турция, Сиде (Кызылот)</h4>
+
+<p class="gey_p">TUI FUN&amp;SUN Club Serra Palace 5*</p>
+
+<ul>
+	<li>Самая большая территория среди отелей TUI FUN&amp;SUN: 150 000 кв.м.</li>
+	<li>Аквапарк для всей семьи</li>
+	<li>Детские водные горки;</li>
+	<li>2 главных ресторана: общий и отдельный ресторан TUI FUN&amp;SUN</li>
+	<li>7 открытых бассейнов (взрослые и детские), включая бассейн олимпийского размера</li>
+	<li>Единственный отель из нашей линейки для туристов из разных стран</li>
+</ul>
+</div>
+
+<div class="row price">
+<!--<div class="col-md-7 price-num">
+<p>от <b>35 358</b> на одного</p>
+
+<p>на 7 ночей</p>
+</div>-->
+
+<div class="col-md-5">
+<p class="tour_a"><a href="/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S">Выбрать тур</a></p>
+</div>
+</div>
+</div>
+</div>
+</a>
+<!-- ОДИН ОТЕЛЬ END ===================================-->
+
+<!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+<a href="/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort" target="_blank">
+<div class="col-md-4 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/22840909-3e68-42ad-8e6a-ec6ffae85d0e/photo-11);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content slide-height_tallone">
+<h4>Турция, Кемер (Гейнюк)</h4>
+
+<p class="gey_p">TUI FUN&amp;SUN Miarosa Ghazal Resort 5*</p>
+
+<ul>
+	<li>Зеленая территория в 2 км от Кемера</li>
+	<li>SPA-центр</li>
+	<li>Бассейн с водными горками</li>
+	<li>Номера с потрясающим видом на горы</li>
+	<li>Отдельный детский ресторан Тукан</li>
+	<li>Отдельная спокойная зона на пляже только для взрослых 18+</li>
+</ul>
+</div>
+
+<div class="row price">
+<!--<div class="col-md-7 price-num">
+<p>от <b>34 586</b> на одного</p>
+
+<p>на 7 ночей</p>
+</div>-->
+
+<div class="col-md-5">
+<p class="tour_a"><a href="/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort">Выбрать тур</a></p>
+</div>
+</div>
+</div>
+</div>
+</a>
+<!-- ОДИН ОТЕЛЬ END ===================================-->
+
+<!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+<a href="/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek" target="_blank">
+<div class="col-md-4 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/c53735b0-0177-41f5-bad2-e0b80d967d6d/photo-12);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content slide-height_tallone">
+<h4>Турция, Белек</h4>
+
+<p class="gey_p">TUI FUN&amp;SUN Club Belek 5*</p>
+
+<ul>
+	<li>Отель &laquo;2 в 1&raquo;: LIFE &ndash; Европейский стиль и MOOD &ndash; марокканский стиль</li>
+	<li>Бунгало MOOD &ndash; это уединенная зеленая территория с relax-бассейнами</li>
+	<li>Бассейн олимпийского размера</li>
+	<li>Номера PREMUIM категории &ndash; Mood Suite, Villa</li>
+	<li>Отдельное спорт-пространство Wellness &amp; Fitness</li>
+	<li>Пляж, ежегодно получающий награду &laquo;Голубой флаг&raquo;</li>
+</ul>
+</div>
+
+<div class="row price">
+<!--<div class="col-md-7 price-num">
+<p>от <b>35 705</b> на одного</p>
+
+<p>на 7 ночей</p>
+</div>-->
+
+<div class="col-md-5">
+<p class="tour_a"><a href="/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek">Выбрать тур</a></p>
+</div>
+</div>
+</div>
+</div>
+</a>
+<!-- ОДИН ОТЕЛЬ END ===================================-->
+
+
+</div>
+</div>
+<!-- Отели с концепцией Кипр -->
+
+<div class="slider slider_2 n" id="s2b2">
+<div class="row-slider" data-col="3">
+
+<!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+<a href="/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark/" target="_blank">
+<div class="col-md-4 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/9df19944-804d-4c56-9667-c545a0b902e0/%d1%84%d0%be%d1%82%d0%be-13);background-position: center;background-size: cover">&nbsp;</div>
+
+<div class="slider-content slide-height_tall">
+<h4>Кипр, Айя Напа</h4>
+
+<p class="gey_p">TUI FUN&amp;SUN Panthea Waterpark 4*</p>
+
+<ul>
+	<li>Собственный аквапарк</li>
+	<li>Территория с большим бассейном</li>
+	<li>Рядом песчаный пляж Лиманаки</li>
+	<li>Бесплатное мороженое с 10 утра до 10 вечера</li>
+	<li>Расположен рядом с луна-парком</li>
+</ul>
+</div>
+
+<div class="row price">
+<!--<div class="col-md-7 price-num">
+<p>от <b>34 895</b> на одного</p>
+
+<p>на 7 ночей</p>
+</div>-->
+
+<div class="col-md-5">
+<p class="tour_a"><a href="/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark/">Выбрать тур</a></p>
+</div>
+</div>
+</div>
+</div>
+</a>
+<!-- ОДИН ОТЕЛЬ END ===================================-->
+
+<!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+<a href="/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites" target="_blank">
+<div class="col-md-4 myslide col-slider-3">
+<div class="sliders-hotels">
+<div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/b4929e8f-5478-472e-860d-66c05edd9ed8/f_Pool-2_f_1);background-position: center;background-size: cover">&nbsp;</div>
+<!-- <img alt="" src="/getmedia/f0fcbe8c-98b7-498e-a9c6-284562aeacde/111" /> -->
+
+<div class="slider-content slide-height_tall">
+<h4>Кипр, Протарас</h4>
+
+<p class="gey_p">TUI FUN&amp;SUN Vangelis Hotel &amp; Suite</p>
+
+<ul>
+	<li>Расположен в самом центре курорта Протарас.</li>
+	<li>Отель предлагает питание по системе All Inclusive и HB+</li>
+	<li>Отель находится рядом с лучшими пляжами: Fig Tree Bay (в 150 метрах), Konnos Bay, Kalamies, Sunrise</li>
+	<li>Номера с размещением 2 взр.+3 реб./3 взр.+2 реб./4 взр.+1 реб</li>
+	<li>Реновация во всех номерах</li>
+</ul>
+</div>
+
+<div class="row price">
+<!--<div class="col-md-7 price-num">
+<p>от <b>41 695</b> на одного</p>
+
+<p>на 7 ночей</p>
+</div>-->
+
+<div class="col-md-5">
+<p class="tour_a"><a href="/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites" target="_blank">Выбрать тур</a></p>
+</div>
+</div>
+</div>
+</div>
+</a>
+<!-- ОДИН ОТЕЛЬ END ===================================-->
+
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- ОТЕЛИ END слайдер ========================================================================================= -->
+</div>
+
+<!-- ОТЕЛИ END  ========================================================================================= -->
+
+<div class="container-fluid footer-informations" style="">
+<div class="row">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<h3>Сайты о концепциях</h3>
+<a href="/concepts/home/">Все концепции TUI</a><br />
+<a href="/concepts/tui-fun-sun/">TUI FUN&amp;SUN</a><br />
+<a href="/concepts/tui-day-night">TUI DAY&amp;NIGHT Connected</a><br />
+<a href="/concepts/tui_toucan">TUI Тукан</a></div>
+
+<div class="col-md-3">
+<h3>Контакты</h3>
+<a href="tel:044%20401%2008%2008">044 401 08 08</a><br />
+<a href="mailto:diffproduct@tui.ua">diffproduct@tui.ua</a></div>
+
+<div class="col-md-3">
+<h3>TUI FUN&amp;SUN в социальных сетях</h3>
+
+<div class="row icons-footer col-10 col-md-12"><a href="https://www.facebook.com/TUIUkraine"><svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg"> <symbol id="icon-facebook"> <path d="M26.3636364,0 L2.63636364,0 C1.17977273,0 0,1.17977273 0,2.63636364 L0,26.3636364 C0,27.8202273 1.17977273,29 2.63636364,29 L15.8181818,29 L15.8181818,17.1363636 L11.8636364,17.1363636 L11.8636364,13.1818182 L15.8181818,13.1818182 L15.8181818,11.0582273 C15.8181818,7.03777273 17.777,5.27272727 21.1185909,5.27272727 C22.7188636,5.27272727 23.5651364,5.39136364 23.9658636,5.44540909 L23.9658636,9.22727273 L21.6867273,9.22727273 C20.2683636,9.22727273 19.7727273,9.976 19.7727273,11.4919091 L19.7727273,13.1818182 L23.9302727,13.1818182 L23.3660909,17.1363636 L19.7727273,17.1363636 L19.7727273,29 L26.3636364,29 C27.8202273,29 29,27.8202273 29,26.3636364 L29,2.63636364 C29,1.17977273 27.8189091,0 26.3636364,0 Z" id="Shape"></path><!--patch--> </symbol></svg> <svg class="icons-social"> <use xlink:href="#icon-facebook"></use></svg></a> <a href="https://www.youtube.com/channel/UC-U-Lwcw8S8pRMd65D7Xa-g"><svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg"> <symbol id="icon-youtube"> <path d="M6.79980556,7 C4.70146759,7 3,8.70146759 3,10.7998056 L3,23.3390833 C3,25.4374213 4.70146759,27.1388889 6.79980556,27.1388889 L28.0786898,27.1388889 C30.1770278,27.1388889 31.8783611,25.4374213 31.8783611,23.3390833 L31.8783611,10.7998056 C31.8783611,8.70146759 30.1770278,7 28.0786898,7 L6.79980556,7 Z M15.1567731,22.1761296 L15.1567731,11.9627593 L21.8697361,17.0694444 L15.1567731,22.1761296 Z" id="Shape"></path> </symbol></svg> <svg class="icons-social" style="margin-top:-8px"> <use xlink:href="#icon-youtube"></use></svg></a> <a href="https://www.instagram.com/tuiukraine.official/"><svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg"> <symbol id="icon-intagram"> <path d="M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M19.2926316,6.91039474 L9.69019737,6.91039474 C8.15752193,6.91039474 6.91039474,8.15752193 6.91039474,9.69019737 L6.91039474,19.2926316 C6.91039474,20.825307 8.15752193,22.0724342 9.69019737,22.0724342 L19.2926316,22.0724342 C20.825307,22.0724342 22.0724342,20.825307 22.0724342,19.2926316 L22.0724342,9.69019737 C22.0724342,8.15752193 20.825307,6.91039474 19.2926316,6.91039474 Z M14.4910965,19.4827851 C11.7392763,19.4827851 9.50004386,17.2435526 9.50004386,14.4910965 C9.50004386,11.7392763 11.7392763,9.50004386 14.4910965,9.50004386 C17.2435526,9.50004386 19.4827851,11.7392763 19.4827851,14.4910965 C19.4827851,17.2435526 17.2435526,19.4827851 14.4910965,19.4827851 Z M19.6430482,10.5322149 C18.9918202,10.5322149 18.4620614,10.0024561 18.4620614,9.35122807 C18.4620614,8.7 18.9918202,8.17024123 19.6430482,8.17024123 C20.2942763,8.17024123 20.8240351,8.7 20.8240351,9.35122807 C20.8240351,10.0024561 20.2942763,10.5322149 19.6430482,10.5322149 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M19.2926316,6.91039474 L9.69019737,6.91039474 C8.15752193,6.91039474 6.91039474,8.15752193 6.91039474,9.69019737 L6.91039474,19.2926316 C6.91039474,20.825307 8.15752193,22.0724342 9.69019737,22.0724342 L19.2926316,22.0724342 C20.825307,22.0724342 22.0724342,20.825307 22.0724342,19.2926316 L22.0724342,9.69019737 C22.0724342,8.15752193 20.825307,6.91039474 19.2926316,6.91039474 Z M14.4910965,19.4827851 C11.7392763,19.4827851 9.50004386,17.2435526 9.50004386,14.4910965 C9.50004386,11.7392763 11.7392763,9.50004386 14.4910965,9.50004386 C17.2435526,9.50004386 19.4827851,11.7392763 19.4827851,14.4910965 C19.4827851,17.2435526 17.2435526,19.4827851 14.4910965,19.4827851 Z M19.6430482,10.5322149 C18.9918202,10.5322149 18.4620614,10.0024561 18.4620614,9.35122807 C18.4620614,8.7 18.9918202,8.17024123 19.6430482,8.17024123 C20.2942763,8.17024123 20.8240351,8.7 20.8240351,9.35122807 C20.8240351,10.0024561 20.2942763,10.5322149 19.6430482,10.5322149 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M0,3 L0,25.9828289 C2.41027941e-15,27.6396832 1.34314575,28.9828289 3,28.9828289 L25.9828289,28.9828289 C27.6396832,28.9828289 28.9828289,27.6396832 28.9828289,25.9828289 L28.9828289,3 C28.9828289,1.34314575 27.6396832,1.167223e-15 25.9828289,0 L3,0 C1.34314575,3.04359188e-16 -2.02906125e-16,1.34314575 0,3 Z M24.1812939,19.2926316 C24.1812939,21.9884868 21.9884868,24.1812939 19.2926316,24.1812939 L9.69019737,24.1812939 C6.99434211,24.1812939 4.80153509,21.9884868 4.80153509,19.2926316 L4.80153509,9.69019737 C4.80153509,6.99434211 6.99434211,4.80153509 9.69019737,4.80153509 L19.2926316,4.80153509 C21.9884868,4.80153509 24.1812939,6.99434211 24.1812939,9.69019737 L24.1812939,19.2926316 Z M19.2926316,6.91039474 L9.69019737,6.91039474 C8.15752193,6.91039474 6.91039474,8.15752193 6.91039474,9.69019737 L6.91039474,19.2926316 C6.91039474,20.825307 8.15752193,22.0724342 9.69019737,22.0724342 L19.2926316,22.0724342 C20.825307,22.0724342 22.0724342,20.825307 22.0724342,19.2926316 L22.0724342,9.69019737 C22.0724342,8.15752193 20.825307,6.91039474 19.2926316,6.91039474 Z M14.4910965,19.4827851 C11.7392763,19.4827851 9.50004386,17.2435526 9.50004386,14.4910965 C9.50004386,11.7392763 11.7392763,9.50004386 14.4910965,9.50004386 C17.2435526,9.50004386 19.4827851,11.7392763 19.4827851,14.4910965 C19.4827851,17.2435526 17.2435526,19.4827851 14.4910965,19.4827851 Z M19.6430482,10.5322149 C18.9918202,10.5322149 18.4620614,10.0024561 18.4620614,9.35122807 C18.4620614,8.7 18.9918202,8.17024123 19.6430482,8.17024123 C20.2942763,8.17024123 20.8240351,8.7 20.8240351,9.35122807 C20.8240351,10.0024561 20.2942763,10.5322149 19.6430482,10.5322149 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M19.2926316,6.91039474 L9.69019737,6.91039474 C8.15752193,6.91039474 6.91039474,8.15752193 6.91039474,9.69019737 L6.91039474,19.2926316 C6.91039474,20.825307 8.15752193,22.0724342 9.69019737,22.0724342 L19.2926316,22.0724342 C20.825307,22.0724342 22.0724342,20.825307 22.0724342,19.2926316 L22.0724342,9.69019737 C22.0724342,8.15752193 20.825307,6.91039474 19.2926316,6.91039474 Z M14.4910965,19.4827851 C11.7392763,19.4827851 9.50004386,17.2435526 9.50004386,14.4910965 C9.50004386,11.7392763 11.7392763,9.50004386 14.4910965,9.50004386 C17.2435526,9.50004386 19.4827851,11.7392763 19.4827851,14.4910965 C19.4827851,17.2435526 17.2435526,19.4827851 14.4910965,19.4827851 Z M19.6430482,10.5322149 C18.9918202,10.5322149 18.4620614,10.0024561 18.4620614,9.35122807 C18.4620614,8.7 18.9918202,8.17024123 19.6430482,8.17024123 C20.2942763,8.17024123 20.8240351,8.7 20.8240351,9.35122807 C20.8240351,10.0024561 20.2942763,10.5322149 19.6430482,10.5322149 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M19.2926316,6.91039474 L9.69019737,6.91039474 C8.15752193,6.91039474 6.91039474,8.15752193 6.91039474,9.69019737 L6.91039474,19.2926316 C6.91039474,20.825307 8.15752193,22.0724342 9.69019737,22.0724342 L19.2926316,22.0724342 C20.825307,22.0724342 22.0724342,20.825307 22.0724342,19.2926316 L22.0724342,9.69019737 C22.0724342,8.15752193 20.825307,6.91039474 19.2926316,6.91039474 Z M14.4910965,19.4827851 C11.7392763,19.4827851 9.50004386,17.2435526 9.50004386,14.4910965 C9.50004386,11.7392763 11.7392763,9.50004386 14.4910965,9.50004386 C17.2435526,9.50004386 19.4827851,11.7392763 19.4827851,14.4910965 C19.4827851,17.2435526 17.2435526,19.4827851 14.4910965,19.4827851 Z M19.6430482,10.5322149 C18.9918202,10.5322149 18.4620614,10.0024561 18.4620614,9.35122807 C18.4620614,8.7 18.9918202,8.17024123 19.6430482,8.17024123 C20.2942763,8.17024123 20.8240351,8.7 20.8240351,9.35122807 C20.8240351,10.0024561 20.2942763,10.5322149 19.6430482,10.5322149 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z" id="Shape"></path><!--patch--> </symbol></svg> <svg class="icons-social"> <use xlink:href="#icon-intagram"></use></svg></a> <a href="https://t.me/tuiteam"><svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg"> <symbol id="icon-telegram"> <path d="M3,0 L25.9828925,-4.4408921e-16 C27.6397468,-7.48448398e-16 28.9828925,1.34314575 28.9828925,3 L28.9828925,25.9828925 C28.9828925,27.6397468 27.6397468,28.9828925 25.9828925,28.9828925 L3,28.9828925 C1.34314575,28.9828925 1.97926296e-15,27.6397468 1.77635684e-15,25.9828925 L-4.4408921e-16,3 C-6.46995335e-16,1.34314575 1.34314575,2.08071603e-15 3,1.77635684e-15 Z M22.8212193,6.39780702 L3.43999781,13.9504627 C2.81223684,14.1951184 2.85026754,15.0959627 3.49647149,15.2867522 L8.42144737,16.7410768 L10.2594496,22.5732566 C10.4514474,23.1824474 11.2234452,23.3671316 11.6703377,22.9108268 L14.2166776,20.310875 L19.212818,23.9781667 C19.8242346,24.4269671 20.6949978,24.0935307 20.8502368,23.3511689 L24.1592259,7.5309057 C24.3212697,6.75598246 23.558875,6.11035088 22.8212193,6.39780702 Z" fill-rule="nonzero" id="Combined-Shape"></path> <path d="M20.3913246,9.90871491 L11.3888596,17.8695965 C11.299125,17.9489649 11.2420154,18.0587961 11.2286601,18.1778487 L10.8820592,21.2589715 C10.870739,21.3594539 10.7301272,21.3727456 10.7001096,21.2762061 L9.27408553,16.6811689 C9.20877193,16.4707917 9.29392763,16.2428618 9.48109211,16.1267982 L20.1120724,9.53336842 C20.3565373,9.38162719 20.6068531,9.71817982 20.3913246,9.90871491 Z" id="Path"></path> </symbol></svg> <svg class="icons-social"> <use xlink:href="#icon-telegram"></use></svg></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://www.tui.ru/getmedia/6039e8fe-a0c4-4347-a1cd-3f0c350089ea/slider-Mobile" type="text/javascript">
+    </script><script src="https://www.youtube.com/iframe_api" type="text/javascript">
+    </script><script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js" type="text/javascript">
+    </script><script src="https://www.tui.ru/getmedia/204066fd-7fc3-4009-a67f-5e5c14412ce7/scroll/" type="text/javascript">
+    </script><script src="https://www.tui.ru/getmedia/e14c79a9-1af1-4201-bd14-8567d5fbc516/lightslider/" type="text/javascript">
+    </script><script type="text/javascript">
+                          $(document).ready(function() {
+                              $('#autoWidth').lightSlider({
+                                  autoWidth:true,
+                                  loop:true,
+                                  onSliderLoad: function() {
+                                      $('#autoWidth').removeClass('cS-hidden');
+                                  } 
+                              });  
+                            });
+
+    </script><script src="https://www.tui.ru/getmedia/6b176d88-6bc0-48fa-aa88-4143bafe5ce4/carousel/" type="text/javascript">
+    </script><script src="https://www.tui.ru/getmedia/9214205f-646e-4ff8-8b2d-613f1852e8ec/js/" type="text/javascript">
+    </script><script type="text/javascript">
+          //height:0 for sliders with empty slides
+          jQuery('.hotels-club-country .tamplate .col-md-3.myslide.col-slider-3').each(function(){
+              if(!jQuery(this).is(':visible')){
+                  if(jQuery(this).parents('.tamplate').find('.col-md-3.myslide.col-slider-3').length==1){
+                      jQuery(this).parents('.tamplate').attr('style','height:0');
+                  }
+              }
+          });
+    </script></div>
+<script type="text/javascript">
+  function smoothScrolling(element) {
+      document.querySelector(element).scrollIntoView({block: "start", behavior: "smooth"});
+    }
+</script>
